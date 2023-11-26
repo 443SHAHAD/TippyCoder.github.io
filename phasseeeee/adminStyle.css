@@ -1,0 +1,396 @@
+main h1{
+font-size: 50px;
+      text-align: center;
+       color:var(--secondary-color);
+}
+
+.Tlist::-webkit-Scrollbar {
+	width: 0;
+}.
+.Tlist1::-webkit-Scrollbar {
+	width: 0;
+}.
+children ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .children li {
+    display: inline-block;
+    /* Set display to inline-block for horizontal layout */
+    margin-right: 20px;
+    /* Add margin for spacing between list items */
+    text-align: center;
+    /* Center-align text and photo */
+    text-align: center;
+  }
+
+  .child-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .child-photo {
+    width: 100px;
+    /* Set the width and height for the photo */
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    /* Add space between the photo and the name */
+    text-align: center;
+  }
+
+  .child-name {
+    font-size: 16px;
+    /* Adjust the font size for the child's name */
+    margin-top: 10px;
+    /* Add space between the photo and the name */
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .BOY .child-photo {
+    background-image: url('img/boy.png');
+    /* Specify the background image for boys */
+    text-align: center;
+  }
+
+
+	body{
+background:var(--primary-color);
+      margin: 0;
+    padding: 0;
+
+}
+
+  .GIRL .child-photo {
+    background-image: url('img/girl.png');
+    /* Specify the background image for girls */
+    text-align: center;
+  }
+
+  .log {
+    padding-bottom: 6px;
+  }
+
+  footer {
+    background-color: #E4F1FF;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: medium;
+    margin-bottom: -30px;
+    text-indent: 2px;
+
+  }
+
+  .about {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .container h2 {
+    font-weight: 900;
+    text-align: center;
+    font-style: oblique;
+  }
+
+  .about p {
+    text-align: center;
+    font-size: medium;
+  }
+
+  .Contact {
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-indent: -3px;
+    padding-left: -30px;
+  }
+
+  .Contact .info {
+    position: relative;
+    text-align: justify;
+    margin-left: 70px;
+  }
+
+  .info li {
+    display: flex;
+    margin-bottom: 0px;
+
+  }
+
+  .info li span:nth-child(1) {
+    color: #27005D;
+    font-size: 5px;
+    margin-right: 10px;
+
+  }
+
+  .info li span {
+    color: #27005D;
+    position: relative;
+    right: 10px;
+    top: 10px;
+  }
+
+  .Contact .info li a {
+    color: #27005D;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .Contact .info li p {
+    text-align: right;
+  }
+
+  .Contact .info li a:hover {
+    color: #27005D;
+  }
+
+  .copyright {
+    width: 100%;
+    background-color: #27005D;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    border: 0;
+  }
+
+  .about,
+  .Contact {
+    flex-basis: calc(50% - 10px);
+    padding: 0 100px;
+  }
+
+  .about h2,
+  .Contact h2 {
+    font-weight: 900;
+    text-align: center;
+    font-style: oblique;
+  }
+
+  .about p,
+  .Contact .info {
+    text-align: center;
+    font-size: medium;
+  }
+
+  .Contact .info {
+    margin-left: 150px;
+  }
+
+
+
+  .Tlist {
+    max-height: 1200px;
+    max-width: 1600px;
+    border: 2px #ddd;
+    display: flex;
+    display: grid;
+    gap: var(--size-10);
+    grid-auto-flow: column;
+    overflow-x: auto;
+    font-family: Young Serif, serif;
+    font-size: 15px;
+    line-height: 1.2em;
+  }
+
+  .Tlist1 {
+    max-height: 1200px;
+    max-width: 1600px;
+    border: 1px #ddd;
+    display: flex;
+    display: grid;
+    gap: var(--size-10);
+    grid-auto-flow: column;
+    overflow-x: auto;
+    font-family: Young Serif, serif;
+    font-size: 11px;
+  }
+
+  .Tlist1 .Card1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 #0d0c0c;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .Tlist .Card {
+    width: 250px;
+    min-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 2px 3px 0 #0d0c0c;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 90%;
+    line-height: 1.1em;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-bottom: 1rem;
+  }
+
+  .Card .image {
+    position: relative;
+    width: 250px;
+  }
+
+  .Card .image img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+  }
+
+  .Card .image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    width: 250px;
+  }
+
+  .Card .image:hover .overlay {
+    opacity: 1;
+    width: 250px;
+  }
+
+  .Card .content {
+    overflow: hidden;
+  }
+
+  .read-more-btn {
+    cursor: pointer;
+    color: blue;
+  }
+
+  .expanded {
+    height: auto !important;
+  }
+
+
+  .Tlist .Card .image {
+    position: relative;
+    row-gap: 0;
+    top: -13px;
+    left: 0;
+    width: 250px;
+    background-color: #27005D;
+    border-radius: 20px 20px 0 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  nav.topnav {
+    background-color: #E4F1FF;
+    overflow: auto;
+    white-space: nowrap;
+
+  }
+
+
+  nav.topnav a {
+    display: inline-block;
+    color: #27005D;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: space-between;
+    padding: 20px 7.5%;
+
+  }
+
+  nav.topnav a:hover {
+    background-color: #777;
+  }
+
+  .children ul {
+    text-align: center;
+    justify-items: center;
+  }
+
+
+  .Card input[name="More"] {
+    display: none;
+
+  }
+
+  main h2 {
+    text-align: center;
+    background-color: #27005D;
+    color: #ffffff;
+  }
+
+  .more-info {
+    display: none;
+  }
+
+  /* CSS to show the additional information when the checkbox is checked */
+  .more-checkbox:checked+.more-label+.more-info {
+    display: block;
+  }
+
+  /* Hide the checkbox */
+  .more-checkbox {
+    display: none;
+  }
+
+  /* Style for the "More" button label */
+  .more-label {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .read-more-btn {
+    cursor: pointer;
+    color: black;
+  }
+
+  p {
+    text-align: center;
+  }
+  .show{
+    display: list-item;;
+  }  
+  .hidden{
+    display: none !important;
+  }

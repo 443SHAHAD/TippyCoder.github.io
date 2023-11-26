@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+ body{
+background:var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+        margin: 0;
+    padding: 0;
+}
+
+
+  .Courses h1{
+    font-size: 50px;
+    text-align: center;
+    color:var(--secondary-color);
+    }
+  
+
+    .containerCourses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      gap: 5px;
+      padding: 80px; 
+    }
+    
+    .courseCard {
+      text-align: center;
+      justify-content: center;
+      padding: 1%;
+      box-sizing: border-box;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      width: calc(33.33% - 15px); 
+      overflow: hidden;
+      height: 150px;
+      transition: 0.8s;
+      border-style: solid;
+      color: #E4F1FF;
+      background-color: #9ab2f2;
+      border-color: rgb(255, 255, 255);
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .courseCard:hover {
+      height: auto;
+    }
+    
+    .top {
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      transition: 0.8s;
+      margin-left: 75px;   
+    }
+    
+    .top h1 {
+      font-size: 50px;
+      text-align: center;
+       color:#491c88;
+    }
+    
+    .Cor-img {
+    width: 150px;
+    height: 150px;
+    justify-items: center;
+    margin: 0px;
+
+    }
+    
+    .bottom {
+      height: auto; 
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 3%;
+      background: #7160d4;
+    }
+    
+.bottom p {
+ font-size: small;
+ line-height: 1.5; 
+ text-align: left;
+    }
+
+    .checked {
+      color: orange;
+      position: relative;
+      bottom: 20px;
+      justify-items: center;
+    }
+
+   
+    :root{
+      --primary-color: radial-gradient(circle, rgba(214, 221, 255, 1) 22%, rgba(62, 120, 213, 1) 100%);
+      --secondary-color: #491c88;
+    }
+    .seconde-theme{
+      --primary-color: rgb(151, 192, 253);
+      --secondary-color: #1c4088;
+      font-family: 'Ubuntu', serif;
+    }
+

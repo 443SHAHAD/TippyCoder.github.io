@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="style.css"> 
+      <link rel="stylesheet" href= "header&footerstyle.css">
+	    				     <script src="themesc.js" ></script>
+	 	    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="Rjs.js" ></script>
+    <style>
+
+
+nav.downnav {
+    background-color: #27005D;
+    overflow: auto;
+    white-space: nowrap;
+  display: inline-block;
+  
+  display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 7px; 
+}
+nav.downnav a {
+  display: inline-block;
+  color: #E4F1FF;
+  text-align: center;
+  font-size: large;
+  padding: 14px;
+  text-decoration: none;
+}
+nav.downnav a:hover {
+  background-color: #e5e5e5;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 40vw; 
+    background-color: antiquewhite; 
+    padding: 2vw; 
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    flex-direction: column; 
+}
+
+.form-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.form-group {
+    flex: 1;
+}
+
+h2 {
+    text-align: center;
+    color: #27005D;
+}
+
+label, input {
+    display: block;
+    margin: 0.5vw 0;
+    color: #555;
+    width: 100%;
+    padding: 0.5vw;
+}
+
+
+input  {
+    padding: 0.5vw;
+    margin: 0.8vw 0;
+    border: 0.1vw solid #ccc;
+    
+}
+
+input[type="submit"] {
+    width: 10vw;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5vw;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 2vw;
+}
+
+
+</style>
+</head>
+<body id="body" class="firstTheme">
+ <a id="Button" alt="Theme Toggle Button"></a>
+    <header>
+        <div class="logo">
+          <img src="img/Tippy_Coder.png" alt="Tippy_Coder logo" width="100" height="100">
+
+        </div>
+      <nav class="nav-list">
+        <strong>
+
+          <a href="Index.html" accesskey="1">Home</a>
+          <a href="Courses.html"accesskey="2">Courses</a>
+          <a href="Tutors1.html"accesskey="3">Tutors</a>
+          <a href="Admenistrator1.html"accesskey="4">Administrator</a>
+          <a href="Parents.html"accesskey="5">Parent</a>
+        </strong>
+      </nav>
+
+      </header><br>
+     
+    <ul class="breadcrumb">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Parents.html">Parents</a></li>
+        <li><a href="Register.html">Register</a></li>
+      </ul> 
+
+
+ <nav class="downnav">       
+  <a href="Register.html">Register a new kid</a>
+   <a href="Enrollment.html">Course enrolment pages</a>
+  <a href="Evaluation.html">Course Evaluation page</a>              
+  </nav >
+ <br><br>
+ <div class="form-container">
+    <form id="enrollmentForm">
+    
+        <h2>Register a new kid</h2>
+        <div class="form-columns">
+            <div class="form-group">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+        </div>
+
+        <div class="form-columns">
+            <div class="form-group">
+                <label for="DOB">Date of birth:</label>
+                <input type="date" id="DOB" name="DOB">
+            </div>
+            <div class="form-group">
+                <label for="PN">Phone Number:</label>
+                <input type="tel" id="PN" name="PN">
+            </div>
+        </div>
+
+        <div class="form-columns">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="img">Photo:</label>
+                <input type="file" id="img" name="img" alt="image">
+            </div>
+        </div>
+
+        <div class="form-columns">
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="gender" name="gender" value='male'><label>Male</label>
+            </div>
+            <div class="form-group">
+               <input type="radio" id="gender" name="gender" value='female'> <label>Female</label>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<br><br>
+
+<section id="childInfoPrintSection" style="display: none;">
+    <!-- Display child's information here after form submission -->
+</section>
+
+<footer>
+  <section class="container">
+   <div class="about"> <h2>About Us</h2>
+    <p>At Tippy Coder, our dedicated team is committed to making programming education accessible<br> and enjoyable for young kids. We have developed a user-friendly platform designed to cater<br> to the unique needs of both parents and children.</p></div>
+
+
+
+   <div class="Contact"> 
+        <h2>Contact Us</h2>
+    <ul class="info">
+
+      <li><span><i style="font-size:22px" class="fa">&#xf098;</i></span>
+        <p><a href="+996534365470">+9965343365470</a></p> </li>
+
+      <li><span><i style="font-size:22px" class="fa">&#xf0e0;</i></span>
+      <p><a href="Tippy_Coder@outlook.com">Tippy_Coder@outlook.com</a></p></li>
+
+      <li><span><i style="font-size:22px" class="fa">&#xf16d;</i></span>
+      <p><a href="Tippy.Coder100">Tippy.Coder100</a></p></li>
+     </ul>
+    </div>
+  
+  </section>
+
+  <section class="copyright">
+  <div class="copyright">
+    <p> <em> ©2023 .All rights reserved </em> </p></div>
+  </section>
+</footer>
+  
+
+</body>
+</html>

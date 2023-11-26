@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Evaluation</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header&footerstyle.css">
+  				     <script src="themesc.js" ></script>
+	 	    <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    nav.downnav {
+      background-color: #27005D;
+      overflow: auto;
+      white-space: nowrap;
+      display: inline-block;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 7px;
+
+    }
+
+    nav.downnav a {
+      display: inline-block;
+      color: #E4F1FF;
+      text-align: center;
+      font-size: large;
+      padding: 14px;
+      text-decoration: none;
+    }
+
+    nav.downnav a:hover {
+      background-color: #e5e5e5;
+    }
+
+    .allform {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 40vw;
+      background-color: antiquewhite;
+      padding: 2vw;
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+      flex-direction: column;
+    }
+
+    h2 {
+      text-align: center;
+      color: #27005D;
+    }
+
+    input[type="submit"] {
+      width: 10vw;
+      background-color: #0056b3;
+      color: #fff;
+      padding: 0.5vw;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0a0b36;
+    }
+
+    .star-rating {
+
+      display: flex;
+      align-items: center;
+      width: 15vw;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin: 3vw auto;
+      position: relative;
+      top: -40px;
+
+    }
+
+
+    .star-rating input {
+      display: none;
+    }
+
+    .star-rating>label {
+      width: 2vw;
+      height: 2vw;
+      font-family: Arial;
+      font-size: 2vw;
+      transition: 0.2s ease;
+      color: orange;
+      line-height: 2vw;
+
+    }
+
+    .star-rating label:hover {
+      color: rgb(249, 179, 58);
+      transition: 0.2s ease;
+    }
+
+    .star-rating label:active::before {
+      transform: scale(1.1);
+    }
+
+    .star-rating label::before {
+      content: '\2606';
+      position: absolute;
+      top: 0px;
+      line-height: 3.5vw;
+    }
+
+
+    .star-rating input:checked~label:before {
+      content: '\2605';
+    }
+
+    @-moz-document url-prefix() {
+      .star-rating input:checked~label:before {
+        font-size: 4.5vw;
+        line-height: 3.25vw;
+      }
+    }
+  </style>
+</head>
+ <a id="Button" alt="Theme Toggle Button"></a>
+<body id="body" class="firstTheme">
+  <header>
+      <div class="logo">
+        <img src="img/Tippy_Coder.png" alt="Tippy_Coder logo" width="100" height="100">
+
+      </div>
+      <nav class="nav-list">
+        <strong>
+
+          <a href="Index.html" accesskey="1">Home</a>
+          <a href="Courses.html"accesskey="2">Courses</a>
+          <a href="Tutors1.html"accesskey="3">Tutors</a>
+          <a href="Admenistrator1.html"accesskey="4">Administrator</a>
+          <a href="Parents.html"accesskey="5">Parent</a>
+        </strong>
+      </nav>
+
+    </header><br>
+
+  <ul class="breadcrumb">
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="Parents.html">Parents</a></li>
+    <li><a href="Evaluation.html">Evaluation</a></li>
+  </ul> 
+
+  <br>
+
+
+  <nav class="downnav">
+    <a href="Register.html">Register a new kid</a>
+    <a href="Enrollment.html">Course Enrollment pages</a>
+    <a href="Evaluation.html">Course Evaluation page</a>
+  </nav>
+  <br><br>
+
+  <div class="allform">
+    <div class="choose">
+      <form onsubmit="return validateForm()">
+        <h2>Course Evaluation</h2>
+        <label>Choose a course:</label>
+        <select name="courses" id="Course">
+          <option value="">Select a course</option>
+          <option value="java">Java</option>
+          <option value="R">Scratch</option>
+          <option value="python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="R">HTML</option>
+          <option value="R">Ruby</option>
+          <option value="R">C++</option>
+          <option value="R">Robotics</option>
+          <option value="R">SQL</option>
+        </select>
+
+        <h4>How was your experience?</h4>
+        <div class="star-rating">
+          <input type="radio" name="stars" id="star-5" value="5">
+          <label for="star-5"></label>
+
+          <input type="radio" name="stars" id="star-4" value="4">
+          <label for="star-4"></label>
+
+          <input type="radio" name="stars" id="star-3" value="3">
+          <label for="star-3"></label>
+
+          <input type="radio" name="stars" id="star-2" value="2">
+          <label for="star-2"></label>
+
+          <input type="radio" name="stars" id="star-1" value="1">
+          <label for="star-1"></label>
+        </div>
+    </div>
+    <div class="share">
+      <textarea rows="10" cols="20" name="feedback">Share your feedback!</textarea>
+      <br><br>
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+  </div>
+  <br><br>
+  <footer>
+    <section class="container">
+      <div class="about">
+        <h2>About Us</h2>
+        <p>At Tippy Coder, our dedicated team is committed to making programming education accessible<br> and enjoyable
+          for young kids. We have developed a user-friendly platform designed to cater<br> to the unique needs of both
+          parents and children.</p>
+      </div>
+
+
+
+      <div class="Contact">
+        <h2>Contact Us</h2>
+        <ul class="info">
+
+          <li><span><i style="font-size:22px" class="fa">&#xf098;</i></span>
+            <p><a href="+996534365470">+9965343365470</a></p>
+          </li>
+
+          <li><span><i style="font-size:22px" class="fa">&#xf0e0;</i></span>
+            <p><a href="Tippy_Coder@outlook.com">Tippy_Coder@outlook.com</a></p>
+          </li>
+
+          <li><span><i style="font-size:22px" class="fa">&#xf16d;</i></span>
+            <p><a href="Tippy.Coder100">Tippy.Coder100</a></p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="copyright">
+      <div class="copyright">
+        <p> <em> ©2023 .All rights reserved </em> </p>
+      </div>
+    </section>
+  </footer>
+  <script>
+
+    function validateForm() {
+      var selectedCourse = document.getElementById("Course").value;
+      var rating = document.querySelector('input[name="stars"]:checked');
+      var feedback = document.querySelector('textarea[name="feedback"]').value;
+
+      if (selectedCourse === "") {
+        alert("Please select a course.");
+        return false;
+      }
+
+      if (!rating) {
+        alert("Please select a rating.");
+        return false;
+      }
+
+      alert("Thank you for your feedback! Your rating for course " + selectedCourse + " is " + rating.value);
+      return true;
+    }
+  </script>
+</body>
+
+</html>

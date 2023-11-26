@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+      <title>enrolment</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="header&footerstyle.css">
+  				     <script src="themesc.js" ></script>
+	 	    <link rel="stylesheet" href="colors.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+   
+
+   <style>
+    
+    nav.downnav {
+    background-color: #27005D;
+    overflow: auto;
+    white-space: nowrap;
+  display: inline-block;
+  
+  display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 7px; 
+  
+}
+nav.downnav a {
+  display: inline-block;
+  color: #E4F1FF;
+  text-align: center;
+  font-size: large;
+  padding: 14px;
+  text-decoration: none;
+}
+nav.downnav a:hover {
+  background-color: #e5e5e5;
+}
+    .allform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 40vw; 
+    background-color: antiquewhite; 
+    padding: 2vw; 
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+h2 {
+  text-align: center;
+  color: #27005D;
+}
+
+input[type="submit"] {
+  width: 10vw;
+  background-color: #0056b3;
+  color: #fff;
+  padding: 0.5vw;
+  border: none;
+  cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #0a0b36;
+}
+.coursesBox{
+    text-align: left;
+  }
+  
+.listcource {
+    list-style-type: none;
+    column-count: 2;
+    column-gap: 20px; }
+
+.listItem {
+    margin-bottom: 10px; 
+}
+  .listItem[data-value="Java"] {
+    background: url('java.png') no-repeat left center;
+    background-size: 20px; 
+    padding-left: 30px; 
+}
+.listItem[data-value="Python"] {
+    background: url('python.png') no-repeat left center;
+    background-size: 20px; 
+    padding-left: 30px; 
+}
+.listItem[data-value="JavaScript"] {
+    background: url('JS.png') no-repeat left center;
+    background-size: 20px; 
+    padding-left: 30px;
+}
+.listItem[data-value="sql"] {
+    background: url('sql.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px; 
+}
+.listItem[data-value="Scratch"] {
+    background: url('Scratch1.png') no-repeat left center;
+    background-size: 18px; 
+    padding-left: 30px; 
+
+}
+.listItem[data-value="c++"] {
+    background: url('c++.png') no-repeat left center;
+    background-size: 18px; 
+    padding-left: 30px; 
+}
+.listItem[data-value="Robotics"] {
+    background: url('robo.png') no-repeat left center;
+    background-size: 20px; 
+    padding-left: 30px; 
+}
+.listItem[data-value="ruby"] {
+    background: url('ruby.png') no-repeat left center;
+    background-size: 20px; 
+    padding-left: 30px; 
+}
+.listItem[data-value="html"] {
+    background: url('html.png') no-repeat left center;
+    background-size: 20px; 
+    padding-left: 30px;
+}
+ </style>
+
+</head> <body id="body" class="firstTheme">
+ <a id="Button" alt="Theme Toggle Button"></a>
+    <header>
+      <div class="logo">
+        <img src="img/Tippy_Coder.png" alt="Tippy_Coder logo" width="100" height="100">
+
+      </div>
+      <nav class="nav-list">
+        <strong>
+
+          <a href="Index.html" accesskey="1">Home</a>
+          <a href="Courses.html"accesskey="2">Courses</a>
+          <a href="Tutors1.html"accesskey="3">Tutors</a>
+          <a href="Admenistrator1.html"accesskey="4">Administrator</a>
+          <a href="Parents.html"accesskey="5">Parent</a>
+        </strong>
+      </nav>
+
+
+    </header><br>
+
+    <ul class="breadcrumb">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Parents.html">Parents</a></li>
+        <li><a href="Enrollment.html">Enrollment</a></li>
+      </ul> 
+    
+<nav class="downnav">
+      
+<a href="Register.html">Register a new kid</a>
+<a href="enrolment.html">Course enrolment pages</a>
+<a href="Evaluation.html">Course Evaluation page</a>           
+</nav> <br><br>
+
+
+       <div class="allform">
+       
+<form>
+    <h2>Course Enrolment</h2>
+
+    <div class="childList">
+        <label for="children">Choose a child:</label>
+        <select name="children" id="children">
+        
+        </select></div>
+
+<br><br>
+<div class="coursesBox">
+    <label for="filterByTutor">Filter by Tutor:</label>
+    <select id="filterByTutor">
+
+    </select>
+    
+    <label for="filterByPrerequisite">Filter by Prerequisite:</label>
+    <select id="filterByPrerequisite">
+
+    </select>
+</div>
+<br>
+
+<div class="coursesBox">
+
+    <label>Choose a course:</label>
+    <ul class="listcource" id="courseList">
+        <li class="listItem" data-value="Java" data-tutor="T.sarah"
+            data-prerequisite="Basic Literacy, Basic computer literacy, practice">
+            <input type="checkbox" id="language1" name="language1" value="Java">
+            <label for="language1"> Java</label><br>
+        </li>
+        <li class="listItem" data-value="Python" data-tutor="T.sarah"
+            data-prerequisite="Basic Literacy, Basic computer literacy, practice">
+            <input type="checkbox" id="language2" name="language2" value="Python">
+            <label for="language2"> Python</label><br>
+        </li>
+        <li class="listItem" data-value="JavaScript" data-tutor="T.amal"
+            data-prerequisite="Basic computer literacy, practice, Familiarity with HTML&CSS">
+            <input type="checkbox" id="language3" name="language3" value="JavaScript">
+            <label for="language3"> JavaScript</label><br>
+        </li>
+        <li class="listItem" data-value="HTML" data-tutor="T.amal"
+            data-prerequisite="Basic Literacy, Basic computer literacy, practice">
+            <input type="checkbox" id="language4" name="language4" value="HTML">
+            <label for="language4"> HTML</label><br>
+        </li>
+        <li class="listItem" data-value="C++" data-tutor="T.majd"
+            data-prerequisite="Basic Literacy, Basic computer literacy, practice">
+            <input type="checkbox" id="language5" name="language5" value="C++">
+            <label for="language5"> C++</label><br>
+        </li>
+        <li class="listItem" data-value="Robotics" data-tutor="T.mona"
+            data-prerequisite="Basic Literacy, Basic computer literacy, practice">
+            <input type="checkbox" id="language6" name="language6" value="Robotics">
+            <label for="language6"> Robotics</label><br>
+        </li>
+        <li class="listItem" data-value="Ruby" data-tutor="T.noha"
+            data-prerequisite="Basic Literacy, Basic computer literacy, practice">
+            <input type="checkbox" id="language7" name="language7" value="Ruby">
+            <label for="language7"> Ruby</label><br>
+        </li>
+        <li class="listItem" data-value="Scratch" data-tutor="T.shahad"
+            data-prerequisite="Basic Literacy, Basic computer literacy, practice">
+            <input type="checkbox" id="language8" name="language8" value="Scratch">
+            <label for="language1">Scratch</label><br>
+        </li>
+        <li class="listItem" data-value="sql" data-tutor="T.raghad"
+            data-prerequisite="Basic Literacy, Basic computer literacy, practice">
+            <input type="checkbox" id="language8" name="language8" value="SQL">
+            <label for="language1">SQL</label><br>
+        </li>
+    </ul>
+</div>
+
+    <br><br>
+    <input id="submitButton" type="button" name="Submit" value="Submit">
+  </form>
+ 
+ </div>
+ <br><br>
+ <footer>
+  <section class="container">
+   <div class="about"> <h2>About Us</h2>
+    <p>At Tippy Coder, our dedicated team is committed to making programming education accessible<br> and enjoyable for young kids. We have developed a user-friendly platform designed to cater<br> to the unique needs of both parents and children.</p></div>
+
+
+
+   <div class="Contact"> 
+        <h2>Contact Us</h2>
+    <ul class="info">
+
+      <li><span><i style="font-size:22px" class="fa">&#xf098;</i></span>
+        <p><a href="+996534365470">+9965343365470</a></p> </li>
+
+      <li><span><i style="font-size:22px" class="fa">&#xf0e0;</i></span>
+      <p><a href="Tippy_Coder@outlook.com">Tippy_Coder@outlook.com</a></p></li>
+
+      <li><span><i style="font-size:22px" class="fa">&#xf16d;</i></span>
+      <p><a href="Tippy.Coder100">Tippy.Coder100</a></p></li>
+     </ul>
+    </div>
+  
+  </section>
+
+  <section class="copyright">
+  <div class="copyright">
+    <p> <em> ©2023 .All rights reserved </em> </p></div>
+  </section>
+</footer>
+<script>
+
+
+
+
+    const childrenNames = JSON.parse(localStorage.getItem('childrenNames')) || [];
+
+
+
+
+
+if(localStorage.getItem('childFirstName')){
+    const childrenSelect = document.getElementById('children');
+    const childOption = document.createElement('option');
+    childOption.value = localStorage.getItem('childFirstName');
+    childOption.textContent = localStorage.getItem('childFirstName');
+    childrenSelect.appendChild(childOption);
+}else{
+    const childrenSelect = document.getElementById('children');
+    const childOption = document.createElement('option');
+    childOption.value = '';
+    childOption.textContent = 'No Childs Found';
+    childrenSelect.appendChild(childOption);
+}
+
+
+
+const courses = [
+        {
+            name: "Java",
+            tutor: "T.sarah",
+            prerequisite: "Basic Literacy, Basic computer literacy, practice"
+        },
+        {
+            name: "Python",
+            tutor: "T.sarah",
+            prerequisite: "Basic Literacy, Basic computer literacy, practice"
+        },
+        {
+            name: "JavaScript",
+            tutor: "T.amal",
+            prerequisite: "Basic computer literacy, practice, Familiarity with HTML&CSS"
+        },
+        {
+            name: "HTML",
+            tutor: "T.amal",
+            prerequisite: "Basic Literacy, Basic computer literacy, practice"
+        },
+        {
+            name: "C++",
+            tutor: "T.majd",
+            prerequisite: "Basic Literacy, Basic computer literacy, practice"
+        },
+        {
+            name: "Robotics",
+            tutor: "T.mona",
+            prerequisite: "Basic Literacy, Basic computer literacy, practice"
+        },
+        {
+            name: "Ruby",
+            tutor: "T.noha",
+            prerequisite: "Basic Literacy, Basic computer literacy, practice"
+        },
+        {
+            name: "Scratch",
+            tutor: "T.shahad",
+            prerequisite: "Basic Literacy, Basic computer literacy, practice"
+        },
+        {
+            name: "SQL",
+            tutor: "T.raghad",
+            prerequisite: "Basic Literacy, Basic computer literacy, practice"
+        }
+    ];
+
+const tutorFilterOptions = document.getElementById('filterByTutor');
+const prerequisiteFilterOptions = document.getElementById('filterByPrerequisite');
+
+const defaultTutorOption = document.createElement('option');
+defaultTutorOption.value = 'allTutors';
+defaultTutorOption.textContent = 'All Tutors';
+tutorFilterOptions.appendChild(defaultTutorOption);
+
+const defaultPrerequisiteOption = document.createElement('option');
+defaultPrerequisiteOption.value = 'allPrerequisites';
+defaultPrerequisiteOption.textContent = 'All Prerequisites';
+prerequisiteFilterOptions.appendChild(defaultPrerequisiteOption);
+
+const uniqueTutors = new Set(courses.map(course => course.tutor));
+uniqueTutors.forEach(tutor => {
+    const option = document.createElement('option');
+    option.value = tutor;
+    option.textContent = tutor;
+    tutorFilterOptions.appendChild(option);
+});
+
+const uniquePrerequisites = new Set(courses.flatMap(course => course.prerequisite.split(', ')));
+uniquePrerequisites.forEach(prerequisite => {
+    const option = document.createElement('option');
+    option.value = prerequisite;
+    option.textContent = prerequisite;
+    prerequisiteFilterOptions.appendChild(option);
+});
+
+const courseList = document.getElementById('courseList');
+tutorFilterOptions.addEventListener('change', filterCourses);
+prerequisiteFilterOptions.addEventListener('change', filterCourses);
+
+function filterCourses() {
+    const selectedTutor = tutorFilterOptions.value;
+    const selectedPrerequisite = prerequisiteFilterOptions.value;
+
+    while (courseList.firstChild) {
+        courseList.removeChild(courseList.firstChild);
+    }
+
+    courses.filter(course => {
+        if (selectedTutor !== 'allTutors' && course.tutor !== selectedTutor) {
+            return false;
+        }
+
+        if (selectedPrerequisite !== 'allPrerequisites' && !course.prerequisite.includes(selectedPrerequisite)) {
+            return false;
+        }
+
+        return true;
+    }).forEach(course => {
+        const listItem = document.createElement('li');
+        listItem.className = 'listItem';
+        listItem.dataset.value = course.name;
+        listItem.dataset.tutor = course.tutor;
+        listItem.dataset.prerequisite = course.prerequisite;
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `language${courses.indexOf(course) + 1}`;
+        checkbox.value = course.name;
+
+        const label = document.createElement('label');
+        label.for = `language${courses.indexOf(course) + 1}`;
+        label.textContent = course.name;
+
+        listItem.appendChild(checkbox);
+        listItem.appendChild(label);
+
+        courseList.appendChild(listItem);
+    });
+}
+
+
+
+    const submitButton = document.getElementById('submitButton');
+    submitButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        const selectedChild = document.getElementById('children').value;
+        if (!selectedChild) {
+            alert('Please select a child');
+            return;
+        }
+        const selectedCourses = document.querySelectorAll('.listItem input:checked');
+        if (!selectedCourses.length) {
+            alert('Please select at least one course');
+            return;
+        }
+        const informationContainer = document.getElementById('informationContainer');
+        while (informationContainer.firstChild) {
+            informationContainer.removeChild(informationContainer.firstChild);
+        }
+
+        const newInformation = document.createElement('p');
+        newInformation.textContent = `Child: ${selectedChild}`;
+        informationContainer.appendChild(newInformation);
+
+        const selectedCoursesList = document.createElement('ul');
+        for (const course of selectedCourses) {
+            const courseListItem = document.createElement('li');
+            const name = course.value;
+            const correspondingCourse = courses.find(courseObj => courseObj.name === name);
+            if (!correspondingCourse) {
+                console.error(`Course with name '${name}' not found in JSON data`);
+                continue;
+            }
+            const tutorName = correspondingCourse.tutor;
+            courseListItem.textContent = `${name} - Tutor: ${tutorName}`;
+            selectedCoursesList.appendChild(courseListItem);
+        }
+        informationContainer.appendChild(selectedCoursesList);
+        document.getElementById('enrolForm').reset();
+    });
+</script>
+
+ 
+</body>
+</html>

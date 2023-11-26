@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parent</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="header&footerstyle.css">
+				     <script src="themesc.js" ></script>
+	 	    <link rel="stylesheet" href="colors.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+     
+.downnav {
+    display: flex;
+    justify-content: center; 
+
+}
+
+.downnav a {
+    text-decoration: none;
+    color: #E4F1FF ;
+    font-size: 30px;
+    background-color: #27005D; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 7px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    width: 200px; 
+    height: 200px; 
+ 
+}
+
+.downnav a:hover {
+    background-color: #e5e5e5;
+}
+
+
+.children, h3 , h1{
+    display: flex;
+    justify-content: center;
+}
+h3,h1{
+   font-size: x-large; 
+   color: #E4F1FF;
+   background-color: #27005D; 
+
+}
+
+
+.children ul {
+    color:#27005D;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.children li {
+    display: inline-block;
+    margin-right: 20px; 
+    text-align: center; 
+    
+}
+
+.child-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.child-photo {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.child-name {
+    font-size: 16px; 
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.BOY .child-photo {
+    background-image: url('img/boy.png'); 
+   
+}
+.GIRL .child-photo {
+    background-image: url('img/girl.png'); 
+ 
+}
+  </style>
+   </head>
+   
+    <body id="body" class="firstTheme">
+ <a id="Button" alt="Theme Toggle Button"></a>
+      <header>
+        <div class="logo">
+          <img src="img/Tippy_Coder.png" alt="Tippy_Coder logo" width="100" height="100">
+
+        </div>
+      <nav class="nav-list">
+        <strong>
+
+          <a href="Index.html" accesskey="1">Home</a>
+          <a href="Courses.html"accesskey="2">Courses</a>
+          <a href="Tutors1.html"accesskey="3">Tutors</a>
+          <a href="Admenistrator1.html"accesskey="4">Administrator</a>
+          <a href="Parents.html"accesskey="5">Parent</a>
+        </strong>
+      </nav>
+  
+
+      </header>
+   <main> 
+       <ul class="breadcrumb">
+         <li><a href="Index.html">Home</a></li>
+
+         <li><a href="Parents.html">Parent</a></li>
+       </ul>
+     <br>
+   
+   <br><br>
+
+  <h1>Parents</h1>
+  </main>
+  <br>
+  <nav class="downnav">
+              
+      <a href="Register.html"><img src="img/re.png" alt="" width="100" height="100"><br>Register <br>a new kid </a>
+       <a href="Enrollment.html"><img src="img/en.png" alt="" width="100" height="100"><br>Course Enrolment</a>
+      <a href="Evaluation.html"><img src="img/ev.png" alt="" width="100" height="100"><br>Course Evaluation</a>
+                       
+      </nav >
+      <br><br>
+    <h3>Registered children</h3>
+<div class="children">
+   
+    <ul id="newRegister">
+        
+      <li class="BOY">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Joun</div>
+            </div>
+        </li>
+        <li class="GIRL">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Emma</div>
+            </div>
+        </li>
+      
+    </ul>
+</div>
+ 
+  <br>
+  <footer>
+    <section class="container">
+     <div class="about"> <h2>About Us</h2>
+      <p>At Tippy Coder, our dedicated team is committed to making programming education accessible<br> and enjoyable for young kids. We have developed a user-friendly platform designed to cater<br> to the unique needs of both parents and children.</p></div>
+  
+  
+  
+     <div class="Contact"> 
+          <h2>Contact Us</h2>
+      <ul class="info">
+  
+        <li><span><i style="font-size:22px" class="fa">&#xf098;</i></span>
+          <p><a href="+996534365470">+9965343365470</a></p> </li>
+  
+        <li><span><i style="font-size:22px" class="fa">&#xf0e0;</i></span>
+        <p><a href="Tippy_Coder@outlook.com">Tippy_Coder@outlook.com</a></p></li>
+  
+        <li><span><i style="font-size:22px" class="fa">&#xf16d;</i></span>
+        <p><a href="Tippy.Coder100">Tippy.Coder100</a></p></li>
+       </ul>
+      </div>
+    
+    </section>
+  
+    <section class="copyright">
+    <div class="copyright">
+      <p> <em> ©2023 .All rights reserved </em> </p></div>
+    </section>
+  </footer>
+
+  <script>
+var Button = document.getElementById("Button");
+  var body = document.getElementById("body");
+  Button.onclick = function () {
+    body.classList.toggle("secondTheme");
+  }
+    </script>
+
+
+  
+ <script>
+const childrensObj = {}
+
+childrensObj[1] = {
+  id: 1,
+  name : "John", 
+  img : "boy.png" 
+}
+
+childrensObj[2] = {
+  id: 2,
+  name : "Emma", 
+  img : "girl.png" 
+}
+
+
+//window.localStorage.clear();
+if (localStorage.getItem('childFirstName')) {
+  const divBx = document.getElementById('newRegister');
+  const childItem = document.createElement('li');
+  childItem.classList.add('GIRL');
+
+  const childInfo = document.createElement('div');
+  childInfo.classList.add('child-info');
+
+  const childPhoto = document.createElement('div');
+  childPhoto.classList.add('child-photo');
+  childInfo.appendChild(childPhoto);
+
+  const childName = document.createElement('div');
+  childName.classList.add('child-name');
+  childName.textContent = localStorage.getItem('childFirstName');
+  childInfo.appendChild(childName);
+
+  childItem.appendChild(childInfo);
+  divBx.appendChild(childItem);
+}
+let savedChildren = window.localStorage.getItem("childrensObj"); 
+
+if(savedChildren == null)
+{
+ window.localStorage.setItem("childrensObj", JSON.stringify(childrensObj));
+}else{ 
+ 
+}
+
+</script>
+</body>
+</html>

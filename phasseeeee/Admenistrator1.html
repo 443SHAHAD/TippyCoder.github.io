@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" href="header&footerstyle.css">
+  <link rel="stylesheet" href="adminStyle.css">
+  	    <link rel="stylesheet" href="colors.css">
+    <script src="themesc.js" ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Administrator</title>
+<body>
+ <a id="Button" alt="Theme Toggle Button"></a>
+  <script>
+    function toggleReadMore(id){
+      let ul = document.getElementById(id);
+      let li = ul.getElementsByClassName("show");
+      for (let i = 0; i < li.length; i++) {
+        li[i].classList.toggle("hidden");
+      }
+    }
+  </script>
+
+
+  <main>
+    
+    <header>
+      <div class="logo">
+        <img src="img/Tippy_Coder.png" alt="Tippy_Coder logo" width="100" height="100">
+
+      </div>
+      <nav class="nav-list">
+        <strong>
+
+          <a href="Index.html" accesskey="1">Home</a>
+          <a href="Courses.html"accesskey="2">Courses</a>
+          <a href="Tutors1.html"accesskey="3">Tutors</a>
+          <a href="Admenistrator1.html"accesskey="4">Administrator</a>
+          <a href="Parents.html"accesskey="5">Parent</a>
+        </strong>
+      </nav>
+    </header>
+  
+    <ul class="breadcrumb">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Admenistrator1.html">Administrator</a></li>
+    </ul> 
+
+
+
+
+    <h1>Administrator</h1>
+    <p id="currentWeekDate"></p>
+    <h2> Registerd Kids </h2>
+
+    <div class="children">
+
+      <ul>
+        <li class="BOY">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Mohammed</div>
+          </div>
+        </li>
+        <li class="GIRL">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Nourah</div>
+          </div>
+        </li>
+        <li class="GIRL">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Yara</div>
+          </div>
+        </li>
+        <li class="BOY">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Saad</div>
+          </div>
+        </li>
+        <li class="GIRL">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Njood</div>
+          </div>
+        </li>
+        <li class="BOY">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Ali</div>
+          </div>
+        </li>
+        <li class="BOY">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Nasser</div>
+          </div>
+        </li>
+        <li class="GIRL">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Raghad</div>
+          </div>
+        <li class="GIRL">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Jood</div>
+          </div>
+        <li class="BOY">
+          <div class="child-info">
+            <div class="child-photo"></div>
+            <div class="child-name">Abdullah</div>
+          </div>
+      </ul>
+    </div>
+    <h2>Courses</h2>
+    <div class="Card">
+      <div class="image"><span class="overlay"></span> </div>
+      <div class="Tlist">
+        <div class="Card">
+          <div class="image"><span class="overlay"></span> <img src="img/C++-logo.png" alt="C++" width="165"
+              height="165"></div>
+
+          <h4>instructor: Majd </h4>
+          <ul id="1">
+            <li> Njood</li>
+            <li> Khalied </li>
+            <li>Anood </li>
+            <li>Abdullah </li>
+            <li class="show hidden"> Hend </li>
+            <li class="show hidden"> Raseel </li>
+            <li class="show hidden"> Yara </li>
+            
+          </ul>
+          <button class="read-more-btn" onclick="toggleReadMore(1)">More / Less</button>
+        </div>
+        
+        <div class="Card" id="2">
+          <div class="image">
+            <span class="overlay"></span>
+            <div class="image"> <img src="img/Java_logo.png" alt="java" width="165" ></div>
+          </div>
+
+          <h4>instructor: Sarah</h4>
+
+
+          <div class="content">
+            <ul id="3">
+              <li>Jood</li>
+              <li> Mohammad </li>
+              <li> Khalied </li>
+              <li class="show hidden">Yara</li>
+              <li class="show hidden">Khalied</li>
+            </ul>
+            <button class="read-more-btn" onclick="toggleReadMore(3)">More / Less</button>
+          </div>
+        </div>
+
+
+
+        <div class="Card">
+          <div class="image"><span class="overlay"></span> <img src="img/SQL-logo.png" alt="PHP" width="165"
+              height="165"></div>
+
+          <h4>instructor: Raghad</h4>
+          <ul>
+            <li> Yara </li>
+            <li> Mohammad </li>
+          </ul>
+        </div>
+        <div class="Card">
+          <div class="image"><span class="overlay"></span> <img src="img/Robotics.png" alt="Robotics" width="165"
+              height="165"></div>
+
+          <h4>instructor: Mona</h4>
+          <ul id="4">
+            <li> Jood </li>
+            <li> Khalied </li>
+            <li> Yara  </li>
+            <li class="show hidden"> Raseel </li>
+            <li class="show hidden"> Nasser </li>
+            <li class="show hidden"> Ali </li>
+          </ul>
+          <button class="read-more-btn" onclick="toggleReadMore(4)">More / Less</button>
+        </div>
+        <div class="Card">
+          <div class="image"><span class="overlay"></span> <img src="img/Ruby-logo.png" alt="Ruby" width="165"
+              height="165"></div>
+
+          <h4>instructor: Noha </h4>
+          <ul id="5">
+            <li> Nourah</li>
+            <li> Abdullah </li>
+            <li> Ali </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="image"><span class="overlay"></span> <img src="img/Scratch.png" alt="Scratch" width="165"
+              height="165"></div>
+
+          <h4>instructor: Shahad </h4>
+          <ul id="6">
+            <li>Mohammad</li>
+            <li> Khalied </li>
+            <li> Nasser </li>
+            <li>Njood </li>
+            <li class="show hidden"> Raseel </li>
+            <li class="show hidden"> Raghad </li>
+
+          </ul>
+          <button class="read-more-btn" onclick="toggleReadMore(6)">More / Less</button>
+        </div>
+
+        <div class="Card">
+          <div class="image"><span class="overlay"></span> <img src="img/Python-logo.png" alt="Python" width="165"
+              height="165"></div>
+
+          <h4>instructor: Sarah</h4>
+          <ul>
+            <li> Jood </li>
+            <li> Khalied </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="image"><span class="overlay"></span> <img src="img/HTML-logo.png" alt="HTML" width="165"
+              height="165"></div>
+
+          <h4>instructor: Amal , Shadan</h4>
+          <ul id="7">
+            <li> Njood </li>
+            <li> Yara </li>
+            <li> Raghad </li>
+          </ul>
+          
+        </div>
+        <div class="Card">
+          <div class="image"><span class="overlay"></span> <img src="img/JavaScript-logo.png" alt="JavaScript  "
+              width="165" height="165"></div>
+
+          <h4>instructor: Amal</h4>
+          <ul id="8">
+            <li> Njood </li>
+            <li> Yara </li>
+            <li> Raghad </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <h2>tutors</h2>
+    <div class="Card1">
+      <div class="image"><span class="overlay"></span> </div>
+      <div class="Tlist1">
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman.png" alt="Dalal" width="130"
+              height="130"></div>
+          <a href="table2.html">
+            <h3>T.Amal</h3>
+          </a>
+          <ul>
+            <li> JavaScript</li>
+            <li> HTML </li>
+          </ul>
+        </div>
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman2.png" alt="Tala " width="130"
+              height="130"></div>
+          <a href="table1.html">
+            <h3> T.Sarah </h3>
+          </a>
+          <ul>
+            <li> java</li>
+            <li>Python </li>
+
+          </ul>
+        </div>
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman3.png" alt="Nada" width="130"
+              height="130"></div>
+          <a href="table2.html">
+            <h3> T.Noha</h3>
+          </a>
+          <ul>
+            <li> Ruby</li>
+          </ul>
+        </div>
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman4.png" alt="Abdulaziz" width="130"
+              height="130"></div>
+          <a href="table1.html">
+            <h3> Raghad</h3>
+          </a>
+          <ul>
+            <li>SQL</li>
+
+          </ul>
+        </div>
+
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman.png" alt="Asmaa" width="130"
+              height="130"></div>
+          <a href="table2.html">
+            <h3> Majd</h3>
+          </a>
+          <ul>
+            <li> C++ </li>
+          </ul>
+        </div>
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman2.png" width="130" height="130">
+          </div>
+          <a href="table1.html">
+            <h3> Shahad </h3>
+          </a>
+          <ul>
+            <li> Scratch</li>
+          </ul>
+        </div>
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman3.png" alt=" Ahmad" width="130"
+              height="130"></div>
+          <a href="table2.html">
+            <h3> Mona </h3>
+          </a>
+          <ul>
+            <li>Robotics</li>
+          </ul>
+        </div>
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman5.png" alt=" Ahmad" width="130"
+              height="130"></div>
+          <a href="table1.html">
+            <h3> Shadan </h3>
+          </a>
+          <ul>
+            <li>HTML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <section class="container">
+      <div class="about">
+        <h2>About Us</h2>
+        <p>At Tippy Coder, our dedicated team is committed to making programming education accessible<br> and enjoyable
+          for young kids. We have developed a user-friendly platform designed to cater<br> to the unique needs of both
+          parents and children.</p>
+      </div>
+
+      <div class="Contact">
+        <h2>Contact Us</h2>
+        <ul class="info">
+
+          <li><span><i style="font-size:22px" class="fa">&#xf098;</i></span>
+            <p><a href="+996534365470">+9965343365470</a></p>
+          </li>
+
+          <li><span><i style="font-size:22px" class="fa">&#xf0e0;</i></span>
+            <p><a href="Tippy_Coder@outlook.com">Tippy_Coder@outlook.com</a></p>
+          </li>
+
+          <li><span><i style="font-size:22px" class="fa">&#xf16d;</i></span>
+            <p><a href="Tippy.Coder100">Tippy.Coder100</a></p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="copyright">
+      <div class="copyright">
+        <p> <em> ©2023 .All rights reserved </em> </p>
+      </div>
+    </section>
+  </footer>
+  <script>
+    // Get the current date
+    var currentDate = new Date();
+
+    // Calculate the first day of the week (Sunday) by subtracting the current day of the week from the current date
+    var firstDayOfWeek = new Date(currentDate);
+    firstDayOfWeek.setDate(currentDate.getDate() - currentDate.getDay());
+
+    // Calculate the last day of the week (Saturday) by adding the remaining days to the first day
+    var lastDayOfWeek = new Date(firstDayOfWeek);
+    lastDayOfWeek.setDate(firstDayOfWeek.getDate() + 6);
+
+    // Format the date as "D - day name - month - year"
+    var formattedFirstDay = `${firstDayOfWeek.getDate()} - ${getDayName(firstDayOfWeek.getDay())} - ${getMonthName(firstDayOfWeek.getMonth())} - ${firstDayOfWeek.getFullYear()}`;
+
+    var formattedLastDay = `${lastDayOfWeek.getDate()} - ${getDayName(lastDayOfWeek.getDay())} - ${getMonthName(lastDayOfWeek.getMonth())} - ${lastDayOfWeek.getFullYear()}`;
+
+    // Display the current week's date in the HTML element with the id "currentWeekDate"
+    document.getElementById("currentWeekDate").innerHTML = `Current Week Date:' ${formattedFirstDay} /  ${formattedLastDay}`;
+
+    // Function to get the day name from the day index (0-6)
+    function getDayName(dayIndex) {
+      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      return days[dayIndex];
+    }
+
+    // Function to get the month name from the month index (0-11)
+    function getMonthName(monthIndex) {
+      var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      return months[monthIndex];
+    }
+  </script>
+
+</body>
+
+</html>

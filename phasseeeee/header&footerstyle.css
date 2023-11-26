@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+*{
+font-family: 'Ubuntu', serif;}
+
+
+header {
+    top: 0;
+    left: 0;
+    width: 86%;
+    padding: 10px 98px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+	 overflow: hidden;
+box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -17%;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+header:hover::before {
+    left: 100%;
+}
+.logo {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+.nav-list a {
+color:var(--third-color);
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+.nav-list a:hover {
+    color: lightblue;
+}
+footer {
+  background-color: #E4F1FF; 
+}
+
+.container{
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: medium;
+  margin-bottom: -30px;
+  text-indent: 2px; 
+  
+}
+.about{
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.container  h2{
+  font-weight: 900;
+  text-align: center;
+  font-style:oblique;
+}
+.about p {
+  text-align: center;
+  font-size: medium;
+}
+.our-message{
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.our-message p{
+  text-align: center;
+  font-size: medium;
+  
+}
+.Contact{
+  flex-grow: 1;
+  flex-basis: 100%;
+  text-indent: -3px;
+padding-left: -30px; 
+}
+
+.Contact .info{
+  position: relative;
+  text-align: justify;
+  margin-left: 70px;
+}
+.info li{
+display: flex ;
+  margin-bottom: 0px;
+  
+}
+.info li span:nth-child(1){
+  color:#27005D;
+  font-size:5px;
+  margin-right: 10px;
+
+}
+.info li span {
+  color: #27005D;
+  position: relative;
+  right:10px;
+  top:10px;
+}
+.Contact .info li a {
+  color: #27005D;
+  text-decoration: none;
+  text-align: center;
+}
+.Contact .info li p{
+  text-align:right;
+}
+.Contact .info li a:hover{
+  color: #27005D;
+}
+.copyright{
+  width: 100%;
+  background-color: #27005D;
+  padding:5px 0;
+  text-align: center;
+  color: white;
+  border: 0;
+}
+.about,
+.Contact {
+  flex-basis: calc(50% - 10px);
+  padding: 0 100px;
+}
+
+.about h2,
+.Contact h2 {
+  font-weight: 900;
+  text-align: center;
+  font-style: oblique;
+}
+
+.about p,
+.Contact .info {
+  text-align: center;
+  font-size: medium;
+}
+
+.Contact .info {
+  margin-left: 150px;
+}
+
+ul.breadcrumb {
+  padding: 15px 15px;
+  list-style: none;
+
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}

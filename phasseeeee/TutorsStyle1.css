@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+*{
+font-family: 'Ubuntu', serif;}
+	body{
+background:var(--primary-color);
+      margin: 0;
+    padding: 0;
+
+}
+
+.Tlist::-webkit-Scrollbar {
+	width: 0;
+}
+.Tlist {
+max-height:1500px ;
+max-width: 1500px ;
+border: 2px  #ddd ;
+display: flex;
+display: grid;
+gap: var(--size-10);
+grid-auto-flow: column;
+overflow-x: auto;
+font-family: 'Ubuntu', serif;
+font-size: 15px ;
+
+}
+#sortDropdown{
+font-size: 15px; }	
+
+
+
+.Tlist .Card{
+width: 300px ;
+	height: 342px;
+	border-radius: 20px;
+
+	text-align: center;
+	justify-content: center;
+	background-color: #ffffff ;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+
+}
+.Tlist .Card .image{
+position: relative;
+row-gap: 0;
+top: -13px;
+	left: 0;
+
+	background-color: #27005D; 
+	border-radius: 20px 20px 0 0 ;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.card ul{
+	text-align: left;
+margin-left: 90px;}
+
+.card:hover{
+		transform: scale(1.03);
+		background: lightgray;
+		z-index: 0.5;
+		box-shadow: 2px 2px 2px #000;
+}
+
+main h2{
+font-size: 50px;
+      text-align: center;
+    color:var(--secondary-color);
+}
+h3{
+	font-family: 'Ubuntu', serif;
+	font-size: 20px ;
+}
+
+
+table{
+	border-spacing: 0;
+	border: 1px solid black;
+width: 80% ;
+height: 60% ;
+	text-align: center ;
+	font-weight: bold;
+	font-family:'Ubuntu', serif;
+	margin-left:auto;
+margin-right:auto;
+ 
+}
+th {
+  background-color: #27005D;
+  color: white;
+  border: 1px solid black;
+
+}
+tbody{
+	  background-color: white;
+  color: black;
+}
+tbody th{
+	  background-color: #27005D;
+color: white;
+border: 1px solid black;}
+td{
+border: 1px solid black;}
+
